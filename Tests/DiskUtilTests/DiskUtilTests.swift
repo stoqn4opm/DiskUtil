@@ -10,7 +10,7 @@ final class DiskUtilTests: XCTestCase {
         
         let expectation = XCTestExpectation(description: "mount,erase,eject")
         
-        DiskUtil.createDiskImage(withSize: 10) { (responce) in
+        DiskUtil.createDiskImage(withSize: 100) { (responce) in
             guard responce.error.isEmpty else { XCTFail(); return }
             let devicePath = responce.output
             

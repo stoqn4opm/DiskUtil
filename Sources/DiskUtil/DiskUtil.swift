@@ -48,7 +48,7 @@ extension DiskUtil {
     public static func createDiskImage(withSize size: Int, completion: @escaping (Response) -> ()) {
         let task = Process()
         task.executableURL = URL(fileURLWithPath: "/usr/bin/hdid")
-        task.arguments = ["-nomount", "ram://\(2048 * size)"]
+        task.arguments = ["-nomount", "ram://\(1990 * size)"]
         
         let outputPipe = Pipe()
         let errorPipe = Pipe()
