@@ -35,7 +35,8 @@ public static func eraseDisk(withDevicePath devicePath: String, name: String, fi
 public static func ejectDisk(withDevicePath devicePath: String, completion: @escaping (Response) -> ())
 ```
 
-Each of these 3 functions give back asynchronously object of type `Response` that look like these:
+Each of these 3 functions give back asynchronously object of type `Response` that look like this:
+
 ```swift
 // MARK: - Response
 
